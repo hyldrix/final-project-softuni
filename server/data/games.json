@@ -1,0 +1,38 @@
+{
+    "07a85138-9899-4a8a-a347-9e2ac11d1ab6": {
+        "title": "Satisfactory",
+        "category": "Strategy",
+        "maxLevel": "4",
+        "imageUrl": "https://lowcygier.pl/wp-content/uploads/2024/07/Ostatnia-szansa-by-kupic-tanio-Satisfactory-na-PC.-Cena-gry-wkrotce-wzrosnie_miniaturka-scaled.jpg",
+        "summary": "Conquer nature by building massive factories across the land. Expand wherever and however you want. The planet is filled with valuable natural resources just waiting to be utilized. As an employee of FICSIT it’s your duty to make sure they come to good use",
+        "_id": "07a85138-9899-4a8a-a347-9e2ac11d1ab6"
+    },
+    "db733e26-ab3b-42c9-9256-e341f37006d9": {
+        "title": "EVE Online",
+        "category": "MMORPG",
+        "maxLevel": "5",
+        "imageUrl": "https://cdn1.epicgames.com/spt-assets/184ac184bcba45c585fffaed03337844/eve-online-18yzr.jpg",
+        "summary": "EVE Online is a free MMORPG sci-fi strategy game where you can embark on your own unique space adventure.",
+        "_id": "db733e26-ab3b-42c9-9256-e341f37006d9"
+        
+    },
+    "kk733e26-5d5d-v4ed-s444-f41f37006d9": {
+        "title": "World of Warcraft",
+        "category": "MMORPG",
+        "maxLevel": "3",
+        "imageUrl": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2hk3QPGtE4J955Gpinmb-4Ju5wJaVuuxfuF7wiPoI36GAakemdXsPV5oL614CQFsWchx4Ty99Q6QGK-EPkpyWjawkIArex_JEBivdeg",
+        "summary": "World of Warcraft was inspired by other MMORPG's, particularly EverQuest, with Blizzard setting out to make their own MMORPG and improving on the features of EverQuest. World of Warcraft allows players to create a character avatar and explore an open game world in third- or first-person view, exploring the landscape, fighting various monsters, completing quests, and interacting with non-player characters (NPCs) or other players.",
+        "_id": "kk733e26-5d5d-v4ed-s444-f41f37006d9",
+        "comments": {
+        "7181b52d-b8a9-4e74-a452-85467079a66f": {
+            "username": "Katya",
+            "text": "What a nice game",
+            "_id": "7181b52d-b8a9-4e74-a452-85467079a66f"
+        },
+        "18ebd6ab-529a-4e35-805c-3023aeb15259": {
+            "username": "Maria",
+            "text": "Never played a better game",
+            "_id": "18ebd6ab-529a-4e35-805c-3023aeb15259"
+        }
+    }}  
+}
