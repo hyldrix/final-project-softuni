@@ -1,0 +1,37 @@
+.container {
+    background-color: black;
+
+}
+
+.slider-image {
+       width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+    opacity: 0.7;     
+}
+
+
+
+.carousel-caption {
+    margin-bottom: 200px;
+    color: white;
+    font-size: 40px;
+    transition: transform 0.5s;
+    transform: scale(1);
+
+    &:hover {
+        transition: transform 0.5s;
+        transform: scale(1.2);
+    }
+}
+
+.slider-header {
+   display: inline-block;
+   margin-bottom: 20px;
+   padding: 10px 20px;
+    font-weight: bold;
+    background-color: rgba(239, 143, 0, 0.9);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
