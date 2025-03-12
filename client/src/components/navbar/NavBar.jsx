@@ -17,7 +17,7 @@ export default function NavBar() {
                     <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
                         <Nav variant='underline'>
                             <Nav.Link as={Link} to={'/'}>Home</Nav.Link>
-                            <Nav.Link as={Link} to={'/login'}>Link</Nav.Link>
+                            <Nav.Link as={Link} to={'/'}>Link</Nav.Link>
 
                             {/* <NavDropdown className={styles["signin-button"]} id="authenticated-nav" title={<><i className="fa-solid fa-user"></i><span> Welcome username</span></>} >
                                 <NavDropdown.Item href="#action/3.1">Create Classes</NavDropdown.Item>
