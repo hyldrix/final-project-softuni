@@ -7,22 +7,23 @@ import NotFound from './components/404/404.jsx';
 import Login from './components/login/Login.jsx';
 import Register from './components/register/Register.jsx';
 import './App.css';
+import { AuthContextProvider } from './contexts/AuthContext.jsx';
 
 function App() {
 
   return (
-    <>
-      <NavBar />
-      <div id="main">
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/register" element={<Register />} />
-          <Route path="*" element={<NotFound />} />          
-        </Routes>
-      </div>
-      <Footer />
-    </>
+      <AuthContextProvider>
+        <NavBar />
+        <div id="main">
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/login" element={<Login />} />
+            <Route exact path="/register" element={<Register />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
+        <Footer />
+      </AuthContextProvider>
   );
 }
 

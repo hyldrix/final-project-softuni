@@ -6,7 +6,6 @@
     align-items: center;
     padding: 150px 0;
     text-align: center;
-    
 }
 
 .title {
@@ -28,15 +27,26 @@
     padding: 3rem;
     margin: auto;
     width: 500px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
+
+.error {
+    color: red;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px 0 25px 0;
+
+    
+}
+
 
 .btn-primary {
     background-color: #ff6f61;
     border-color: #ff6f61;
     color: #fff;
     padding: 1rem 2rem;
-    margin-bottom: 2rem;
     border-radius: 5px;
+    margin-bottom: 1.5rem;
     transition: background-color 0.3s ease-in-out;
     &:hover {
         background-color: #f08214;

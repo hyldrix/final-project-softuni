@@ -9,7 +9,7 @@ export default function Advantages() {
                 <div className="row best-class-sections-detail">
                     <div className="col-lg-12 best-class-club-desc">
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="img-container col-lg-6">
                                 <img src="/img/the-best-class-yoga.jpg" alt="" />
                             </div>
                             <div className={`${styles.explain} col-lg-6 detail-col-club`}>
