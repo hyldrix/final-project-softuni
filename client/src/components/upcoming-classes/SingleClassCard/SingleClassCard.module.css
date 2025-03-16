@@ -1,0 +1,118 @@
+.upcoming-card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    flex: 0 0 33;
+    margin: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+        background-color: #f0821447;
+        border-color: #d9534f;
+    }
+    cursor: pointer;
+    
+}
+
+.upcoming-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+    transition: filter 0.3s ease-in-out;
+    &:hover {
+        filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.3));
+        cursor: pointer;
+    }
+}
+
+.upcoming-card-title > span {
+display: inline-block;
+font-weight: bold;
+margin-right: 0.5rem;
+background-color: rgba(255, 5, 218, 0.333);
+padding: 0.2rem 0.5rem;
+border-radius: 5px;
+}
+
+.upcoming-details {
+    
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.upcoming-details i {
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    color: #808080;
+
+}
+
+.upcoming-details span {
+    position: absolute;
+    left: 2.8rem;
+    color: #000;
+}
+
+.upcoming-cost {
+    position: absolute;
+    margin: 0;
+    top: 125px;
+    right: 25px;
+    padding: 0.2rem 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ff8c00;
+
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: #f9f9f9 4px solid;
+    border-style:double;
+
+
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+
+}
+
+
+.upcoming-card-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.upcoming-card-register button {
+  background-color: #ff8c00;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+      background-color: #f08214;
+  }
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  
+  width: 100%;
+        
+    
+}
