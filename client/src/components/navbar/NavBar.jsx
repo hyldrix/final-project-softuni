@@ -7,24 +7,27 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
+import { useLogout } from '../../hooks/useAuth.js';
 import { useAuthContext } from '../../contexts/AuthContext.jsx';
 
 
 export default function NavBar() {
 
-    const { isAuthenticated, username } = useAuthContext();
+    //const { isAuthenticated, username } = useAuthContext();
 
+    const logout = useLogout();
+const {username, isAuthenticated} = useAuthContext();
 
     return (
         <Navbar sticky="top" expand="lg" className="bg-body-tertiary">
             <Container className={styles['container']}>
-                <Navbar.Brand href="#home"><img src='/YogaOm.png' width="150" /></Navbar.Brand>
+                <Navbar.Brand as={Link} to={'/'}><img src='/YogaOm.png' width="150" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
 
                     <Nav variant='underline'>
                         <Nav.Link as={Link} to={'/'}>Home</Nav.Link>
-                        <Nav.Link as={Link} to={'/'}>Link</Nav.Link>
+                        <Nav.Link as={Link} to={'/classes'}>Upcoming classes</Nav.Link>
 
                         {
                             isAuthenticated ?
@@ -35,7 +38,7 @@ export default function NavBar() {
                                     </NavDropdown.Item>
 
                                     <NavDropdown.Divider />
-                                    <NavDropdown.Item href="/">
+                                    <NavDropdown.Item as={Link} onClick={logout}>
                                         Logout
                                     </NavDropdown.Item>
                                 </NavDropdown>)
