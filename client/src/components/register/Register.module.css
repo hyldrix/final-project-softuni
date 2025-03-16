@@ -40,11 +40,11 @@
 }
 
 
+
 .btn-primary {
-    background-color: #ff6f61;
-    border-color: #ff6f61;
+    background-color: #ff8c00;    border-color:#ff8c00;  
     color: #fff;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 5px;
     margin-bottom: 1.5rem;
     transition: background-color 0.3s ease-in-out;
