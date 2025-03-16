@@ -33,12 +33,12 @@
     width: 100%;
     max-width: 100%;
     height: auto;
-
-   
+     
    transition: transform 0.3s;
-    transform: scale(1);
-    &:hover {
-        transform: scale(1.05);
+transform: scaleX(-1);
+&:hover {
+        transform: scaleX(-1);
+
     }
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
