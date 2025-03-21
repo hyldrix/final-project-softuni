@@ -1,11 +1,14 @@
 ## SoftUni Final Project - Yoga Studio Web Application
+   
+# Live Preview
+The live preview is available at: https://final-project-softuni-fbqg.vercel.app
 
 ## Project Overview
 This project is a React-based web application for a yoga or fitness studio. It provides features such as user authentication, class management, and information display about the studio's services. Project utilizes HTML, CSS, JavaScript and React. This project also utilises bootstrap (components and styling)
 
-The following repository has been prepared as a part of preparation for the project defense at SoftUni (https://softuni.bg/) where I have participant of JavaScript/React educational path. 
+The following repository has been prepared as a part of preparation for the project defense at SoftUni (https://softuni.bg/) where I have been a participant of JavaScript/React educational path. 
 
-[<img src="https://github.com/hyldrix/final-project-softuni/blob/main/preview-1.png?raw=true" width="200" height="200" />] (https://github.com/hyldrix/final-project-softuni/blob/main/preview-1.png?raw=true)
+<img src="https://github.com/hyldrix/final-project-softuni/blob/main/preview-1.png?raw=true" style="width:75%; height:auto;"/>
 
 ## Project Structure
 ```
@@ -45,7 +48,102 @@ The following repository has been prepared as a part of preparation for the proj
         └── App.css
 
 ```
+## Steps for installation and local development preview
 
+1. Clone the repository from the address: 
+   ```
+   https://github.com/hyldrix/final-project-softuni.git
+   ```
+2. In terminal go to server folder with the following command:
+    ```
+    cd server
+    ```
+3. Run locally provided practice server with following command: 
+   ```
+   node server.js
+   ```
+4. In separate terminal go to client folder with the following command:
+   ```
+   cd client
+   ```
+5. Install all dependencies with: 
+    ```
+    npm install
+    ```
+6. To run project in development mode use: 
+    ```
+    npm run dev
+    ```
+7. Finally open the application with localhost link and port provided to you in terminal 
+
+# Available views
+## Public view
+1. Home page - entry point for the user. The landing page provides basic information about Yoga Studio and invites user to join the yoga community. 
+2. Upcomming classes - page on which user can check what are the upcoming classes in "YogaOm". Data is displaed in asceding order by date.
+
+
+
+3. Class Detail Card - provides more informarion about classes (such us time, date, price, cllas type). 
+<img src=" https://github.com/hyldrix/final-project-softuni/blob/main/preview-5.png?raw=true" style="width:75%; height:auto;"/>
+
+   - Guest user will see encouragement to create an account. 
+   - Logged user will have an opportunity to sign in for the class
+   - If the user is logged in, the user will see information that he is already signed up for the class
+
+  
+4. Login page - A page where the user can login
+   <img src="https://github.com/hyldrix/final-project-softuni/blob/main/preview-6.png?raw=true" style="width:75%; height:auto;"/>
+
+5. Register page - A page where the user can register
+
+   <img src="https://github.com/hyldrix/final-project-softuni/blob/main/preview-7.png?raw=true" style="width:75%; height:auto;"/>
+
+
+##  Private view
+### Admin View
+   <img src="https://github.com/hyldrix/final-project-softuni/blob/main/preview-2.png?raw=true" style="width:75%; height:auto;"/>
+
+
+
+   Only for the account with following details 
+   | Username  |  Password |
+|---|---|
+|  admin@abv.bg | admin   |
+
+1. Create classes Edit classes pages - the part of application which allows administration to add/edit classes 
+
+   <img src="https://github.com/hyldrix/final-project-softuni/blob/main/preview-8.png?raw=true" style="width:50%; height:auto;"/>
+
+   
+
+   <img src="https://github.com/hyldrix/final-project-softuni/blob/main/preview-9.png?raw=true" style="width:50%; height:auto;"/>
+
+   
+
+
+   
+2. Manage classes page (a.k.a Admin Panel) - the part of application which allows administration to manage users signed for the classes. Conviniently a searchbar to filter the list of participants has been implemented 
+   
+
+   <img src="https://github.com/hyldrix/final-project-softuni/blob/main/preview-10.png?raw=true" style="width:50%; height:auto;"/>
+
+### End user-view 
+
+   <img src="https://github.com/hyldrix/final-project-softuni/blob/main/preview-4.png?raw=true" style="width:75%; height:auto;"/>
+
+
+   Only for the ccounts with following details 
+   | Username  |  Password |
+|---|---|
+|  peter@abv.bg | 123456   |
+|  george@abv.bg | 123456   |
+
+
+
+1. My classes - end user panel where user can manage upcoming classes.  
+
+   <img src="https://github.com/hyldrix/final-project-softuni/blob/main/preview-11.png?raw=true" style="width:75%; height:auto;"/>
+   
 ## Main Application Component
 
 The `App` component (in `App.jsx`) is the main component of the application. It sets up the routing and overall structure of the app.
@@ -89,14 +187,16 @@ This project also utilizes minor bootstrap components (i.e. Navbar, Modals etc.)
 ## Ideas for Future Development
 
 1. Implement state management (e.g., Redux) if the application grows in complexity
-2. Add TypeScript for improved type safety
-3. Implement unit and integration tests
-4. Add PropTypes or TypeScript interfaces for component props
-5. Implement a design system or component library for consistency
-6. Add internationalization for multiple language support
-7. Ensure responsive design for all device sizes
-8. Improve accessibility with ARIA attributes and keyboard navigation
-9. Implement error boundaries for better error handling
-10. Consider server-side rendering for improved performance and SEO
+2. Implementation of functionality for admin to be able to remove class - now only owner of class can do that 
+3. Add TypeScript for improved type safety
+4. Implement unit and integration tests
+5. Add PropTypes or TypeScript interfaces for component props
+6. Implement a design system or component library for consistency
+7. Add internationalization for multiple language support
+8. Ensure responsive design for all device sizes
+9. Improve accessibility with ARIA attributes and keyboard navigation
+10. Implement error boundaries for better error handling
+11. Consider server-side rendering for improved performance and SEO
+
 
 
