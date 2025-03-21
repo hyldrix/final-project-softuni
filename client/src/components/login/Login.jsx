@@ -6,8 +6,6 @@ import { useLogin } from '../../hooks/useAuth.js';
 import styles from './Login.module.css';
 import { useState } from 'react';
 import { useAuthContext } from '../../contexts/AuthContext.jsx';
-import usePersistedState from '../../hooks/usePersistedState.js';
-Link;
 
 const formFields = {
     email: '',
@@ -23,6 +21,7 @@ export default function Login() {
     const navigate = useNavigate();
     const { changeAuthState } = useAuthContext();
 
+
     const { register, handleSubmit } = useForm(
         {
             defaultValues: {
@@ -37,7 +36,7 @@ export default function Login() {
             const result = await login(data.email, data.password);
             let data2 = { ...result, isAuthenticated: true };
             changeAuthState(data2);
-            navigate('/');
+            navigate('/classes');
         }
         catch (error) {
             setError(error.message);
