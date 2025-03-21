@@ -1415,8 +1415,11 @@
                 "_createdOn": 1740572353906,
                 "_id": "fdd69914-ae0e-4bc4-a719-250770f205b3"
             },
-    
+
         ],
+        myclasses: [],
+
+
         records: {
             i01: {
                 name: "John1",
@@ -1659,6 +1662,68 @@
                 _updatedOn: 1616237293676
             }
         },
+
+        classes: {
+
+            "8b281380-22d9-43c9-9f1b-5fb3ac51a56d": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "classType": "Water Yoga",
+                "date": 1742555022,
+                "instructor": "Ivan Ivanov",
+                "price": "80",
+                "imageUrl": "https://images.pexels.com/photos/4325466/pexels-photo-4325466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                "timestart": 660,
+                "timeend": 780,
+                "address": "120 Tsarigradsko Shose, Sofia",
+                "description": "Water Yoga with Ivan Ivanov is a dynamic practice that synchronizes breath with movement. In this class, you will flow through a series of poses designed to build strength, flexibility, and balance. The sequence of poses is linked together in a smooth, continuous manner, creating a dance-like rhythm that helps to quiet the mind and energize the body. Whether you're a beginner or experienced, this class is designed to challenge you while helping you find a sense of peace and inner calm.",
+                "_createdOn": 1742136090718,
+                "_id": "8b281380-22d9-43c9-9f1b-5fb3ac51a56d"
+            },
+
+            "85645973-46f5-4579-bdbb-be44dd251966": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "classType": "Flower Yoga",
+                "date": 1742555022,
+                "instructor": "Ivanka Tsvetankova",
+                "price": "60",
+                "imageUrl": "https://images.pexels.com/photos/3758158/pexels-photo-3758158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                "timestart": 720,
+                "timeend": 840,
+                "address": "120 Tsarigradsko Shose, Sofia",
+                "description": "Flower Yoga is a gentle and meditative practice that combines traditional yoga poses with the symbolism and energy of flowers. Inspired by nature’s grace and growth, this practice encourages mindfulness, breath awareness, and fluid movement, helping practitioners cultivate inner peace and harmony. Each session may focus on different flowers, drawing on their meanings—such as the lotus for enlightenment or the rose for love—to enhance emotional and spiritual well-being. Ideal for all levels, Flower Yoga fosters a deep connection between body, mind, and nature, inviting a sense of renewal and blossoming from within.",
+                "_createdOn": 1742294062510,
+                "_id": "85645973-46f5-4579-bdbb-be44dd251966"
+            },
+            "59e2a471-f0b2-4dbb-90b1-7bba72589a8c": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "classType": "Sunrise Yoga",
+                "instructor": "Yasen Yasenov",
+                "price": "55",
+                "imageUrl": "https://images.pexels.com/photos/31203802/pexels-photo-31203802/free-photo-of-banaras-mnich-medytacja.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                "date": 1743202800,
+                "timestart": 600,
+                "timeend": 720,
+                "address": "120 Tsarigradsko Shose, Sofia",
+                "description": "Sunrise yoga is a serene and revitalizing practice that combines the tranquility of early mornings with the benefits of mindful movement and breathwork. As the world slowly wakes, the soft hues of dawn create a perfect backdrop for grounding and centering the mind. This practice not only enhances flexibility and strength but also sets a positive tone for the day, reducing stress and promoting mental clarity. The quiet of the morning allows practitioners to connect deeply with their intentions, fostering a sense of gratitude and mindfulness. Whether practiced indoors or in nature, sunrise yoga is a rejuvenating way to embrace the new day with peace and energy.",
+                "_createdOn": 1742300633981,
+                "_id": "59e2a471-f0b2-4dbb-90b1-7bba72589a8c"
+            },
+            "817cd360-00b5-4505-9c18-011ff2e4298b": {
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "classType": "Meditation",
+                "instructor": "Dimitar Antonov",
+                "price": "60",
+                "imageUrl": "https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                "date": 1743116400,
+                "timestart": 600,
+                "timeend": 720,
+                "address": "120 Tsarigradsko Shose, Sofia",
+                "description": "Meditation classes provide a structured and supportive environment for individuals to explore the art of mindfulness and inner stillness. Guided by experienced instructors, participants are introduced to techniques such as breath awareness, body scanning, and visualization to help calm the mind and reduce stress. These classes often cater to all levels, from beginners seeking to ease into meditation to seasoned practitioners looking to deepen their practice. Beyond relaxation, meditation classes can foster emotional resilience, enhance focus, and promote a sense of balance in daily life. With regular attendance, many find a greater connection to themselves and the world around them.",
+                "_createdOn": 1742301038612,
+                "_id": "817cd360-00b5-4505-9c18-011ff2e4298b"
+            }
+        },
+
         games: {
             "07a85138-9899-4a8a-a347-9e2ac11d1ab6": {
                 "title": "Satisfactory",
