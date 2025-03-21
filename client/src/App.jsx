@@ -14,6 +14,7 @@ import ClassDetailsCard from './components/upcoming-classes/ClassDetailsCard/Cla
 import EditClasses from './components/edit-classes/EditClasses.jsx';
 import ManageClasses from './components/manage-classes/ManageClasses.jsx';
 import MyClasses from './components/my-classes/MyClasses.jsx';
+import RouteGuard from './components/common/route-guard/RouteGuard.jsx';
 
 function App() {
 
@@ -22,18 +23,21 @@ function App() {
       <NavBar />
       <div id="main">
         <Routes>
+
           <Route exact path="/" element={<Home />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/register" element={<Register />} />
           <Route exact path="/classes" element={<UpcomingClasses />} />
-          <Route exact path="/classes/:classId" element={<ClassDetailsCard/>} />
-            <Route exact path="/classes/create" element={<CreateClasses/>} />
-            <Route exact path="/classes/edit/:classId" element={<EditClasses/>} />
-            <Route exact path="/classes/admin/" element={<ManageClasses/>} />
-            <Route exact path="/myclasses" element={<MyClasses/>} />
-  
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <Route exact path="/classes/:classId" element={<ClassDetailsCard />} />
+
+          <Route path="*" element={<NotFound />} />
+          <Route element={<RouteGuard />}>
+            <Route exact path="/classes/create" element={<CreateClasses />} />
+            <Route exact path="/classes/edit/:classId" element={<EditClasses />} />
+            <Route exact path="/classes/admin/" element={<ManageClasses />} />
+            <Route exact path="/myclasses" element={<MyClasses />} />
+          </Route>
+        </Routes>
       </div>
       <Footer />
     </AuthContextProvider>
