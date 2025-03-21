@@ -98,6 +98,9 @@ The following repository has been prepared as a part of preparation for the proj
 
    <img src="https://github.com/hyldrix/final-project-softuni/blob/main/preview-7.png?raw=true" style="width:75%; height:auto;"/>
 
+* Modals: Each Delete operation is confirmed with modal
+    <img src="https://github.com/hyldrix/final-project-softuni/blob/main/preview-13.png?raw=true" style="width:75%; height:auto;"/>
+
 
 ##  Private view
 ### Admin View
@@ -113,7 +116,7 @@ The following repository has been prepared as a part of preparation for the proj
 1. Create classes Edit classes pages - the part of application which allows administration to add/edit classes 
 
    <img src="https://github.com/hyldrix/final-project-softuni/blob/main/preview-8.png?raw=true" style="width:50%; height:auto;"/>
-
+2. Owner panel on Class details page - for CRUD operations on records 
    
 
    <img src="https://github.com/hyldrix/final-project-softuni/blob/main/preview-9.png?raw=true" style="width:50%; height:auto;"/>
@@ -143,7 +146,7 @@ The following repository has been prepared as a part of preparation for the proj
 1. My classes - end user panel where user can manage upcoming classes.  
 
    <img src="https://github.com/hyldrix/final-project-softuni/blob/main/preview-11.png?raw=true" style="width:75%; height:auto;"/>
-   
+
 ## Main Application Component
 
 The `App` component (in `App.jsx`) is the main component of the application. It sets up the routing and overall structure of the app.
@@ -176,6 +179,21 @@ Uses `react-router-dom` for routing with the following routes:
 11. **ManageClasses**: For administrators to manage classes
 12. **MyClasses**: Displays classes associated with the logged-in user
 13. **NotFound**: 404 Not Found page component
+14. **RouteGuard**: Ensures that only authenticated users can access certain parts of the application, such as the admin panel or user-specific pages.
+
+## Hooks
+- useState - for state management
+- useEffect - for managing side effects 
+- useForm - for managing react forms
+- useReducer - for state transformation
+ 
+### Custom hooks
+- useLogin - to manage auth context and login for the user 
+- useRegister - to manage registration for the user 
+- useLogout - to manage logout on local and server level
+- usePersistedState - to work with authData stored in localStorage
+- useGetAllClasses, useGetClassById, useGetMyClasses - fetching and storing data 
+- useCreateClass, useEditClass - CRUD operations on classes 
 
 ## Context
 **AuthContext**: React Context for managing authentication state across the application.
