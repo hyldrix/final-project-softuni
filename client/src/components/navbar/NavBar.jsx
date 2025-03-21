@@ -9,6 +9,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
 import { useLogout } from '../../hooks/useAuth.js';
 import { useAuthContext } from '../../contexts/AuthContext.jsx';
+import { isAdmin } from '../../utils/authUtils.js';
 
 
 export default function NavBar() {
@@ -16,7 +17,7 @@ export default function NavBar() {
     //const { isAuthenticated, username } = useAuthContext();
 
     const logout = useLogout();
-const {username, isAuthenticated} = useAuthContext();
+    const { username, isAuthenticated } = useAuthContext();
 
     return (
         <Navbar sticky="top" expand="lg" className="bg-body-tertiary">
@@ -32,10 +33,19 @@ const {username, isAuthenticated} = useAuthContext();
                         {
                             isAuthenticated ?
                                 (<NavDropdown className={styles["signin-button"]} id="authenticated-nav" title={<><i className="fa-solid fa-user"></i><span> Welcome {username}</span></>} >
-                                    <NavDropdown.Item href="#action/3.1">Create Classes</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.2">
-                                        View Classes
+                                    {
+                                        isAdmin() && <>
+                                            <NavDropdown.Item as={Link} to={'/classes/create'}>Create Classes</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to={'/classes/admin'}>Manage Classes</NavDropdown.Item>
+                                            <NavDropdown.Divider />
+
+                                        </>
+                                    }
+
+                                    <NavDropdown.Item href="/myclasses">
+                                        My Classes
                                     </NavDropdown.Item>
+                                    { }
 
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item as={Link} onClick={logout}>
