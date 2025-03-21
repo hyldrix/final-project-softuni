@@ -1,19 +1,21 @@
 
 import { Link } from 'react-router-dom';
-import styles from './SingleClassCard.module.css'
-export default function SingleClass() {
+import styles from './SingleClassCard.module.css';
+import { converttoHumanDate, minutesToTime } from '../../../utils/timeUtils.js';
+export default function SingleClassCard({ classData }) {
     return (
         <div className={styles["upcoming-card"]}>
-            <img src="https://media.istockphoto.com/id/182149444/photo/body-mind-and-soul.jpg?s=612x612&w=0&k=20&c=b899tAY_IvxWRSczeJ4dAFipXgVzEBcr6b491HVWsrU=" alt="" />
-            <div className={styles["upcoming-card-title"]}><span><i className="fa-solid fa-tag"></i> Flower Yoga</span></div>
+            <img src={classData.imageUrl} alt="" />
+            <div className={styles["upcoming-card-title"]}><span><i className="fa-solid fa-tag"></i> {classData.classType}</span></div>
             <div className={styles['upcoming-details']}>
-                <div className={styles["upcoming-card-date"]}><i className="fa-solid fa-calendar-days"></i><span>August 15th, 2022</span></div>
-                <div className={styles["upcoming-card-time"]}><i className="fa-solid fa-clock"></i><span>9:00 AM - 11:00 AM</span></div>
-                <div className={styles["upcoming-card-location"]}><i className="fa-solid fa-map-pin"></i><span>128 Tsarigradsko Shose</span></div>
-                <div className={styles["upcoming-card-price"]}><div className={styles['upcoming-cost']}>200 BGN</div></div>
+                <div className={styles["upcoming-card-date"]}><i className="fa-solid fa-calendar-days"></i><span>{converttoHumanDate(classData.date)}</span></div>
+                <div className={styles["upcoming-card-time"]}><i className="fa-solid fa-clock"></i><span>{minutesToTime(classData.timestart)} - {minutesToTime(classData.timeend)}</span></div>
+                <div className={styles["upcoming-card-location"]}><i className="fa-solid fa-map-pin"></i><span>{classData.address}</span></div>
+                <div className={styles["upcoming-card-instructor"]}><i className="fa-solid fa-person-walking-dashed-line-arrow-right"></i><span>Instructor - {classData.instructor}</span></div>
+                <div className={styles["upcoming-card-price"]}><div className={styles['upcoming-cost']}>{classData.price} BGN</div></div>
 
             </div>
-            <div className={styles["upcoming-card-register"]}><Link to={'/'}><button>Register Now</button></Link></div>
+            <div className={styles["upcoming-card-register"]}><Link to={`/classes/${classData._id}`}><button>Details</button></Link></div>
         </div>
     );
 }

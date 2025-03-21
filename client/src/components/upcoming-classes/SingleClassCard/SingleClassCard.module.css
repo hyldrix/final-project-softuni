@@ -21,7 +21,7 @@
 
 .upcoming-card img {
     width: 100%;
-    height: auto;
+    max-height: 180px;
     object-fit: cover;
     border-radius: 10px 10px;
     margin-bottom: 1rem;
@@ -43,21 +43,21 @@ border-radius: 5px;
 }
 
 .upcoming-details {
-    
+    font-size: 0.8rem;
     margin-left: 0.5rem;
     margin-top: 0.5rem;
 }
 
 .upcoming-details i {
     font-size: 0.8rem;
-    margin-right: 0.5rem;
+    margin-right: 0.2rem;
     color: #808080;
-
+    padding-left: 0;
 }
 
 .upcoming-details span {
     position: absolute;
-    left: 2.8rem;
+    left: 3.5rem;
     color: #000;
 }
 
@@ -83,7 +83,7 @@ border-radius: 5px;
 
     text-align: center;
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 500;
 
 }
