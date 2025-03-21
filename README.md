@@ -3,6 +3,8 @@
 # Live Preview
 The live preview is available at: https://final-project-softuni-fbqg.vercel.app
 
+(Warning: For fetch operations you need to run the server provided in the repository locally. Backend is not setup yet therfore to view it correctly follow the instructions below)
+
 ## Project Overview
 This project is a React-based web application for a yoga or fitness studio. It provides features such as user authentication, class management, and information display about the studio's services. Project utilizes HTML, CSS, JavaScript and React. This project also utilises bootstrap (components and styling)
 
