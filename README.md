@@ -3,7 +3,7 @@
 ## Project Overview
 This project is a React-based web application for a yoga or fitness studio. It provides features such as user authentication, class management, and information display about the studio's services.
 
-![Homepage]()
+![Homepage](https://github.com/hyldrix/final-project-softuni/blob/main/preview-1.png?raw=true)
 
 ## Project Structure
 ```
