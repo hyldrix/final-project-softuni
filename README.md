@@ -1,9 +1,11 @@
 ## SoftUni Final Project - Yoga Studio Web Application
 
 ## Project Overview
-This project is a React-based web application for a yoga or fitness studio. It provides features such as user authentication, class management, and information display about the studio's services.
+This project is a React-based web application for a yoga or fitness studio. It provides features such as user authentication, class management, and information display about the studio's services. Project utilizes HTML, CSS, JavaScript and React. This project also utilises bootstrap (components and styling)
 
-![Homepage](https://github.com/hyldrix/final-project-softuni/blob/main/preview-1.png?raw=true)
+The following repository has been prepared as a part of preparation for the project defense at SoftUni (https://softuni.bg/) where I have participant of JavaScript/React educational path. 
+
+[<img src="https://github.com/hyldrix/final-project-softuni/blob/main/preview-1.png?raw=true" width="200" height="200" />] (https://github.com/hyldrix/final-project-softuni/blob/main/preview-1.png?raw=true)
 
 ## Project Structure
 ```
