@@ -25,7 +25,6 @@ export const useRegister = () => {
 
 
         const authData = await register(email, password, username);
-        console.log(authData);
         authData.password = null;
         changeAuthState(authData)
 
