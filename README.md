@@ -215,6 +215,7 @@ This project also utilizes minor bootstrap components (i.e. Navbar, Modals etc.)
 9. Improve accessibility with ARIA attributes and keyboard navigation
 10. Implement error boundaries for better error handling
 11. Consider server-side rendering for improved performance and SEO
+12. Optimization for mobile devices - currently application is best visible on wide-screen non-mobile devices
 
 
 
