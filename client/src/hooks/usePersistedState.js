@@ -5,7 +5,6 @@ export default function usePersistedState(initialState) {
     const [state, setState] = useState(() => {
 
         const persistedAuth = localStorage.getItem('auth');
-        console.log('Peristed state: ' + persistedAuth);
         if (!persistedAuth) {
             if (typeof initialState === 'function') {
                 return initialState();
