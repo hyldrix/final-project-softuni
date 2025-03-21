@@ -17,7 +17,6 @@ export const login = async (email, password) => {
 
 export const register = async (email, password, username) => {
 
-    console.log(username)
     const authData = await requester.post(BASE_URL + 'register', { email, password, username });
     return authData;
 };
