@@ -1,5 +1,5 @@
 import { useEffect, useReducer, useState } from 'react';
-import { getSignedClasses } from '../api/classes-api.js';
+import { getAllSignedClasses, getSignedClasses } from '../api/classes-api.js';
 function classesReducer(state, action) {
     switch (action.type) {
         case 'GET_ALL_MY_CLASSES':
@@ -44,7 +44,7 @@ export function useGetMyClasses(userId) {
     return [classes, dispatch, isLoading];
 
 }
-export function useGetAllClasses(userId) {
+export function useGetAllClasses() {
 
     const [isLoading, setIsLoading] = useState(false);
 
@@ -56,7 +56,7 @@ export function useGetAllClasses(userId) {
         (async () => {
             setIsLoading(true);
             try {
-                const classes = await getSignedClasses(userId);
+                const classes = await getAllSignedClasses();
                 console.log(classes);
                 dispatch({ type: 'GET_ALL_MY_CLASSES', payload: classes });
             } catch (error) {
@@ -67,7 +67,7 @@ export function useGetAllClasses(userId) {
             }
         })();
 
-    }, [userId]);
+    }, []);
 
     return [classes, dispatch, isLoading];
 

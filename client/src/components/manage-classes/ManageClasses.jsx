@@ -13,7 +13,7 @@ export default function ManageClasses() {
     const [searchInput, setSearchInput] = useState('');
 
     const searchInputHandler = () => {
-        let lowercaseinput = document.getElementById('search-field').value;
+        let lowercaseinput = document.getElementById('search-field').value.toLowerCase();
         setSearchInput(lowercaseinput);
     };
 
